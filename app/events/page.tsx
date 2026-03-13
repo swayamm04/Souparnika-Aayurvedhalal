@@ -2,6 +2,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SectionLabel from "@/components/SectionLabel";
 import Image from "next/image";
+import wellnessCampImg from "@/assets/wellness-camp.png";
+import workshopImg from "@/assets/ayurveda-workshop.png";
+import consultationImg from "@/assets/health-consultation.png";
 
 const events = [
   {
@@ -9,18 +12,21 @@ const events = [
     date: "April 15 - 20, 2026",
     description: "Experience the traditional spring detox with authentic Panchakarma procedures guided by our experts.",
     type: "Wellness Camp",
+    image: wellnessCampImg,
   },
   {
     title: "Ayurveda for Modern Living",
     date: "May 5, 2026",
     description: "A comprehensive workshop on integrating Dincharya (daily routine) for better mental and physical health.",
     type: "Workshop",
+    image: workshopImg,
   },
   {
     title: "Free Healthcare Consultation",
     date: "June 10, 2026",
     description: "Join our community outreach program for free Nadi Pariksha and personalized health advice.",
     type: "Community Event",
+    image: consultationImg,
   }
 ];
 
@@ -51,26 +57,41 @@ export default function Events() {
       <section className="py-24 px-6 md:px-16 lg:px-24 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {events.map((event, i) => (
-            <div key={i} className="group cursor-pointer">
-              <div className="bg-secondary/5 border border-primary/5 p-8 h-full flex flex-col hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all duration-500 rounded-sm">
-                <div className="flex justify-between items-start mb-6">
-                  <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-primary font-bold">
-                    {event.type}
-                  </span>
-                  <span className="font-sans text-[10px] tracking-[0.1em] text-foreground/40 font-medium">
-                    {event.date}
-                  </span>
+            <div key={i} className="group cursor-pointer h-full">
+              <div className="bg-secondary/5 border border-primary/5 h-full flex flex-col hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 rounded-xl overflow-hidden group">
+                {/* Image Container */}
+                <div className="relative h-64 w-full overflow-hidden">
+                  <Image 
+                    src={event.image} 
+                    alt={event.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-sans text-[10px] tracking-[0.1em] uppercase text-primary font-bold shadow-sm">
+                      {event.type}
+                    </span>
+                  </div>
                 </div>
-                <h3 className="font-serif text-2xl mb-4 group-hover:text-primary transition-colors">
-                  {event.title}
-                </h3>
-                <p className="font-sans text-sm text-foreground/60 leading-relaxed mb-8 flex-grow">
-                  {event.description}
-                </p>
-                <div className="pt-6 border-t border-primary/5">
-                  <button className="font-sans text-xs tracking-[0.3em] uppercase font-bold text-primary group-hover:tracking-[0.4em] transition-all">
-                    Register Interest
-                  </button>
+
+                <div className="p-8 flex flex-col flex-grow">
+                  <div className="mb-4">
+                    <span className="font-sans text-[10px] tracking-[0.1em] text-foreground/40 font-medium">
+                      {event.date}
+                    </span>
+                  </div>
+                  <h3 className="font-serif text-2xl mb-4 group-hover:text-primary transition-colors">
+                    {event.title}
+                  </h3>
+                  <p className="font-sans text-sm text-foreground/60 leading-relaxed mb-8 flex-grow">
+                    {event.description}
+                  </p>
+                  <div className="pt-6 border-t border-primary/5">
+                    <button className="font-sans text-xs tracking-[0.3em] uppercase font-bold text-primary group-hover:tracking-[0.4em] transition-all">
+                      Register Interest
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

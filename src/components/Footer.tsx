@@ -1,5 +1,8 @@
+import OverlappingCTA from "./OverlappingCTA";
+
 const Footer = () => (
-  <footer className="bg-secondary/20 py-16 px-6 md:px-16 lg:px-24">
+  <footer className="relative bg-secondary/20 pt-32 pb-16 px-6 md:px-16 lg:px-24">
+    <OverlappingCTA />
     <div className="max-w-6xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
         <div>
@@ -29,13 +32,14 @@ const Footer = () => (
         <div>
           <h4 className="font-sans text-xs tracking-[0.2em] uppercase text-foreground mb-4">Visit Us</h4>
           <p className="font-sans text-sm text-muted-foreground leading-relaxed font-light">
-            Souparnika Ayurvedalaya, 5th cross,<br />
-            100 Feet Rd, Vinayaka Nagar,<br />
-            Shivamogga, KA 577201
+            Souparnika Ayurvedalaya, 5th Cross,<br />
+            100 Feet Road, Opp Kottureshwara Hospital,<br />
+            Near Usha Nursing home, Vinayaka Nagar,<br />
+            Shivamogga - 577201
           </p>
           <p className="font-sans text-sm text-muted-foreground mt-3 font-light">
-            +91 9480544164<br />
-            atreyaayurvedalayashivamogga@gmail.com
+            +91 9901780522<br />
+            +91 9480544164
           </p>
         </div>
       </div>

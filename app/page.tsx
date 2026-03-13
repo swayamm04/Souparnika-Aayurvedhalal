@@ -1,6 +1,8 @@
 import HeroSection from "@/components/HeroSection";
 import Navigation from "@/components/Navigation";
 import OfferingsSection from "@/components/OfferingsSection";
+import StatsSection from "@/components/StatsSection";
+import OverlappingCTA from "@/components/OverlappingCTA";
 import BreatherImage from "@/components/BreatherImage";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import ProcessSection from "@/components/ProcessSection";
@@ -14,6 +16,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <OfferingsSection />
+      <StatsSection />
       <BreatherImage src={spaInterior.src} alt="Peaceful spa interior with natural stone and warm light" />
       <WhyChooseSection />
       <ProcessSection />

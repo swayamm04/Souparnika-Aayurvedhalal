@@ -14,6 +14,10 @@ const treatments = [
     description: "Targeted treatments combining herbal oils and gentle techniques to release tension and restore emotional equilibrium.",
   },
   {
+    title: "Ayurvedic Treatment for Sciatica",
+    description: "Specialized relief for nerve pain using traditional therapies like Kati Basti, Taila Dhara, Pizhichil, and Virechana & Basti to target the root cause of sciatic pain.",
+  },
+  {
     title: "Joint and Muscle Pain Treatment",
     description: "Specialized therapies using warm medicated oils and poultices to relieve chronic pain and improve mobility.",
   },

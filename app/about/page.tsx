@@ -52,19 +52,19 @@ export default function About() {
                 Chief Medical Consultant
               </span>
               <h2 className="font-serif text-3xl md:text-4xl tracking-wide">
-                Dr. Souparnika Devi
+                Dr. Deepak BSR
               </h2>
               <p className="font-sans text-sm tracking-[0.1em] text-foreground/60">
-                BAMS, MS (Ayurveda) • 15+ Years of Experience
+                Consultant Ayurveda Physician
               </p>
             </div>
 
             <div className="space-y-6 text-foreground/80 leading-relaxed font-sans text-sm tracking-wide">
               <p>
-                Dr. Souparnika Devi is a renowned Ayurvedic physician dedicated to the ancient wisdom of holistic healing. With over 15 years of clinical excellence, she specializes in chronic disease management and wellness optimization through authentic Panchakarma procedures.
+                Dr. Deepak BSR is a dedicated Ayurvedic physician specializing in holistic health and traditional healing methods. With a focus on identifying the root cause of ailments, he provides personalized treatment plans that integrate ancient wisdom with modern lifestyle needs.
               </p>
               <p>
-                Her approach combines traditional diagnosis with personalized care, ensuring that every patient receives a treatment plan tailored to their unique Prakriti (constitution).
+                His expertise in chronic pain management, particularly Sciatica and joint disorders, has helped many patients achieve lasting relief through authentic Ayurvedic therapies.
               </p>
 
               <div className="grid grid-cols-2 gap-8 pt-8 border-t border-primary/10">

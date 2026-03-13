@@ -16,7 +16,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-center min-h-screen px-6 md:px-16 lg:px-24 max-w-3xl">
-        <div className="fade-in-up" style={{ animationDelay: "1.5s", opacity: 0 }}>
+        <div className="fade-in-up" style={{ animationDelay: "0.2s", opacity: 0 }}>
           <span className="font-sans text-xs tracking-[0.3em] uppercase text-background/70 mb-6 block">
             Welcome to Souparnika Ayurvedalaya
           </span>
